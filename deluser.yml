@@ -1,0 +1,9 @@
+---
+- name: "Remove user"
+  hosts: apache
+  vars_files:
+    - plainTextVars.yml
+  become: yes
+  gather_facts: no
+  roles:
+    - role: "/home/user-ansible/awxMangeUser/fdeluser"

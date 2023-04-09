@@ -1,0 +1,6 @@
+---
+  - name: remove user
+    ansible.builtin.user:
+      name: "{{ user_name_to_manage }}"
+      state: absent
+      remove: true
