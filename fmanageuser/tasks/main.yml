@@ -12,11 +12,11 @@
       ssh_key_comment: yes
       shell: "{{ user_shell }}" 
       update_password: "on_create"
-    when: {{ Add_or_Delete_User }} == "Add"
+    when: "{{ Add_or_Delete_User }}" == "Add"
 
   - name: remove user
     ansible.builtin.user:
       name: "{{ user_name_to_manage }}"
       state: absent
       remove: true
-    when: {{ Add_or_Delete_User }} == "Delete"
+    when: "{{ Add_or_Delete_User }}" == "Delete"
