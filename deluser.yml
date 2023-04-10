@@ -6,4 +6,4 @@
   become: yes
   gather_facts: no
   roles:
-    - role: "/home/user-ansible/awxMangeUser/fdeluser"
+    - role: "fdeluser"
