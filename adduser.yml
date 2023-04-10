@@ -1,6 +1,6 @@
 ---
 - name: "Ajout user"
-  hosts: apache
+  hosts: all
   vars_files:
     - secretsVars.yml
     - plainTextVars.yml

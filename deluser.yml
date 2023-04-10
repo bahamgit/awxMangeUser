@@ -1,6 +1,6 @@
 ---
 - name: "Remove user"
-  hosts: apache
+  hosts: all
   vars_files:
     - plainTextVars.yml
   become: yes
