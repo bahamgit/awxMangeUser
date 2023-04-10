@@ -16,7 +16,7 @@
 
   - name: remove user
     ansible.builtin.user:
-      name: "{{ user_name_to_manage }}"
+      name: "{{ user_name_to_delete }}"
       state: absent
       remove: true
     when: Add_or_Delete_User == 'Delete'
