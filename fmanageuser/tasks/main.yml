@@ -19,4 +19,4 @@
       name: "{{ user_name_to_manage }}"
       state: absent
       remove: true
-    when: "{{ Add_or_Delete_User }}" == "Delete"
+    when: "{{ Add_or_Delete_User }}" == 'Delete'
