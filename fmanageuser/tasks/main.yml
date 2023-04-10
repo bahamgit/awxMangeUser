@@ -2,7 +2,7 @@
   - name: Add a user with a specific uid and a primary group of sudo
     # module ansible pour la gestion des user
     ansible.builtin.user:
-      name: "{{ user_name_to_manage }}"
+      name: user_name_to_add
       # state : détermine si le compte doit exister ou non, par défaut state = present
       state: present
       groups: sudo
