@@ -1,7 +1,7 @@
 ---
 
 # User to manage
-user_name_to_manage: "bobo"
+user_name_to_manage: " {{ user }}"
 
 # user shell
 user_shell: "/bin/bash"
